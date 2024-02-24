@@ -1,0 +1,632 @@
+/*
+ * Author: Miguel Olivares
+ * Date: 4/20/2020
+ * File: app.css
+ * Description: This file houses all the style code fro the website
+ *
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    /* might change color to white or a light gray thats close to white*/
+    background-color: white;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#navigation {
+    float: right;
+    height: 100%;
+}
+
+#navigation a {
+    height: 100%;
+    float: left;
+    padding: 0px 20px;
+    transition: background-color 0.8s ease, height .5s ease;
+}
+
+#navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+#navigation a:hover {
+    background-color: #F9A03F;
+    cursor: pointer;
+    height: 120%;
+}
+
+#header {
+    width: 100%;
+    height: 70px;
+    display: block;
+    background-color: #813405;
+    position: relative;
+}
+
+#inner-header {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#logoImage1 {
+    position: absolute;
+    top: -25px;
+    transition: top .5s ease;
+}
+
+#logoImage2 {
+    position: relative;
+    top: 60px;
+    left: 75px;
+    width: 100px;
+    transform: scaleX(-1);
+    transition: top .5s ease;
+}
+
+#Title {
+    position: absolute;
+    text-align: center;
+    margin-left: 36px;
+    font-size: 55px;
+}
+
+#logoImage1:hover {
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+}
+
+#logoImage2:hover ~ #logoImage1 {
+    position: absolute;
+    top: -5px;
+    cursor: pointer;
+}
+
+#content-wrap {
+    padding-bottom: 55px;
+}
+
+#footer {
+    background-color: #813405;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px; /* Footer height */
+}
+
+#inner-footer {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#copyright {
+    height: 100%;
+    display: table;
+    float: right;
+}
+
+#copyright h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+#social_media {
+    height: 100%;
+    display: table;
+    float: left;
+    width: 25%;
+}
+
+#Facebook {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    margin-left: 10px;
+    transition: background-color 0.8s ease, bottom .5s ease, color .5s ease;
+}
+
+#Facebook:hover {
+    cursor: pointer;
+    bottom: 15px;
+    color: #3b5998;
+}
+
+#Instagram {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    font-size: 40px;
+    padding: 10px;
+    margin-left: 60px;
+    color: white;
+    transition: background-color 0.8s ease, bottom .5s ease, color .5s ease;
+}
+
+#Instagram:hover {
+    cursor: pointer;
+    bottom: 15px;
+    color: #E1306C;
+}
+
+#Twitter {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    font-size: 40px;
+    padding: 10px;
+    margin-left: 110px;
+    color: white;
+    transition: background-color 0.8s ease, bottom .5s ease, color .5s ease;
+
+}
+
+#Twitter:hover {
+    cursor: pointer;
+    bottom: 15px;
+    color: #1DA1F2;
+}
+
+#Snapchat {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    font-size: 40px;
+    padding: 10px;
+    margin-left: 160px;
+    color: white;
+    transition: background-color 0.8s ease, bottom .5s ease, color .5s ease;
+}
+
+#Snapchat:hover {
+    cursor: pointer;
+    bottom: 15px;
+    color: #FFFC00;
+
+}
+
+
+/*  this code makes it so that the footer is always at bottom of page*/
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content {
+    padding-bottom: 50px;
+    position: relative;
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+
+#nav a {
+    margin: auto;
+    background-color: #D45113;
+    padding: 20px 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transition: all 0.5s ease-in-out;
+}
+
+#nav a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+}
+
+#nav a:hover {
+    background-color: #F9DDA4;
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#nav a:hover::after {
+    opacity: 1;
+}
+
+.boxes {
+    position: relative;
+    margin: auto;
+    width: 350px;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.boxes:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.boxes:hover .cover {
+    opacity: 75%;
+}
+
+.boxes h1 {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+
+.cover {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    transition: all 0.5s ease-in-out;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #2c2a29;
+    opacity: 0%;
+}
+
+.boxes img {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.recipeList {
+    padding-top: 20px;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.recipeList img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+}
+
+.recipeHolder {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+    height: 150px;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.recipeHolder:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    right: 0;
+    left: 0;
+    background-color: #2c2a29;
+    opacity: 80%;
+    bottom: 85%;
+}
+
+.overlay p {
+    text-align: center;
+}
+
+.recipeHolder:hover .overlay {
+    bottom: 0;
+}
+
+.addRecipeContainer {
+    margin-top: 30px;
+    margin-right: 25px;
+    float: right;
+    padding: 20px;
+    background-color: #D45113;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.addRecipeContainer:hover {
+    background-color: #F9DDA4;
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.addRecipeContainerUser {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    transition: all 0.7s ease-in-out;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #2c2a29;
+    opacity: 0%;
+}
+
+.addRecipeContainer:hover .addRecipeContainerUser {
+    opacity: 80%;
+}
+
+.addRecipeContainerUser p {
+    text-align: center;
+    margin-top: 25px;
+    transform: rotate(15deg)
+}
+
+.space {
+    width: 33%;
+}
+
+.RegistrationTable {
+    width: 70%;
+    margin: auto;
+}
+
+.RegistrationTable p {
+
+    float: right;
+}
+
+.RegistrationTable input {
+    float: left;
+}
+
+.RegistrationTable textarea {
+    resize: none;
+}
+
+.Back2Catalog {
+    position: relative;
+    text-align: center;
+    width: 18%;
+    padding: 20px;
+    background-color: #D45113;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.Back2Catalog:hover {
+    background-color: #F9DDA4;
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.food {
+    width: 1000px;
+}
+
+.food img {
+    object-fit: contain;
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+    min-height: 150px;
+}
+
+.detail {
+    width: 850px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.detail h3 {
+    width: 93%;
+    margin: auto;
+}
+
+.segmentHeader {
+    background-color: #9E6240;
+    color: white;
+    text-indent: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.info {
+    white-space: pre-wrap;
+}
+
+.info span {
+    font-weight: normal;
+}
+
+.edge {
+    /*#F9A03F*/
+    background-color: #9E6240;
+    height: 37px;
+    width: 100%;
+}
+
+.infoColor {
+    background-color: #F8DDA4;
+    width: 98%;
+    margin: auto;
+}
+
+.editButton {
+    width: 25%;
+    height: 80px;
+    display: block;
+    margin: auto;
+}
+
+.editButton input {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: #D45113;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.editButton input:hover {
+    background-color: #F9DDA4;
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#searchbar {
+    position: relative;
+}
+
+#suggestionDiv {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0pc;
+    background-color: #fff;
+    font-size: 0.85em;
+    z-index: 9999;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 2px 10px 12px 2px rgba(0, 0, 0, .175);
+}
+
+#suggestionDiv span {
+    display: block;
+    padding: 4px 3px 4px 10px;
+    cursor: default;
+    min-width: 315px;
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;
+}
+
+#suggestionDiv span:hover {
+    background-color: #F9DDA4;
+}
+
+.searchInput {
+    margin: 0;
+    padding: 14px;
+    width: 300px;
+    border: none;
+}
+
+.search {
+    background: #ddd;
+    border: none;
+    margin: 0;
+    padding: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search:hover {
+    background: #ccc;
+}
+
+.inputStyle {
+    font-size: 25px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.userbtt {
+    border: none;
+    background-color: #D45113;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.userbtt:hover {
+    background-color: #F9DDA4;
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.leftInfo {
+    width: 50%;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+.rightInfo {
+    width: 50%;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
