@@ -9,12 +9,12 @@
  */
 
 class Database {
-
+    
     //define database parameters
     private $param = array(
         'host' => 'localhost',
-        'login' => 'phpuser',
-        'password' => 'phpuser',
+        'login' => 'root',
+        'password' => '',
         'database' => 'finalprojectdb',
         'tblRecipes' => 'recipes',
     );
