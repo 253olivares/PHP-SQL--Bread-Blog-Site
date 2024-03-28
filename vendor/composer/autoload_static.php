@@ -46,6 +46,7 @@ class ComposerStaticInit807bf1bb8a1339c45f87cc455741ebd9
         'ComposerAutoloaderInit807bf1bb8a1339c45f87cc455741ebd9' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInit807bf1bb8a1339c45f87cc455741ebd9' => __DIR__ . '/..' . '/composer/autoload_static.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Cookie' => __DIR__ . '/../..' . '/models/cookie.class.php',
         'CookieAddRecipe' => __DIR__ . '/../..' . '/views/category/cookies/add/cookie_add_recipe.class.php',
         'CookieController' => __DIR__ . '/../..' . '/controller/cookie_controller.class.php',
